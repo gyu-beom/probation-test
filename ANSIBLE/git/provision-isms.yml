@@ -2,4 +2,5 @@
 - name: provision isms playbook
   hosts: all
   roles:
-    - role: ./roles/provision-isms
+    - common
+    - provision-isms

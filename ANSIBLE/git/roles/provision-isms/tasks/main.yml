@@ -1,27 +1,27 @@
 ---
-- name: get isms
+- name: get isms archive directory
   get_url:
     url: "{{ isms_github_url }}"
     dest: "{{ isms_archive_dir }}"
     mode: 0644
 
-- name: unzip isms
+- name: unarchive isms archive directory
   unarchive:
     src: "{{ isms_archive_dir }}"
     dest: /root
     remote_src: yes
 
-- name: find isms
+- name: find isms directory
   find:
     paths: "{{ isms_dir }}"
     patterns: '*.sh'
   register: output
 
-- name: execute isms
+- name: execute isms script
   shell: "{{ item.path }}"
   with_items: "{{ output.files }}"
 
-- name: delete isms 
+- name: remove isms archive directory
   file:
     path: "{{ isms_archive_dir }}"
     state: absent

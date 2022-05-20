@@ -1,4 +1,4 @@
 ---
-isms_github_url: ""
+isms_github_url: "https://github.com/gyu-beom/probation-test/raw/main/ISMS/ISMS.tar.gz"
 isms_dir : "/root/ISMS"
 isms_archive_dir: "{{ isms_dir }}.tar.gz"

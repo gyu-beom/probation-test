@@ -1,0 +1,16 @@
+---
+- name: remove ntp yum packages
+  become: yes
+  yum:
+    name: ntp
+    state: absent
+
+- name: update yum
+  yum: list=updates update_cache=true
+
+- name: set Asia/Seoul timezone
+  become: yes
+  timezone:
+    name: Asia/Seoul
+  notify:
+    - restart and enable chronyd
