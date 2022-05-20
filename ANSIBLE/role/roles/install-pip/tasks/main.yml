@@ -1,0 +1,24 @@
+# ---
+# - name: pip3 install
+#   yum:
+#     name: python3-pip
+
+# - name: pip3,setuptools upgrade
+#   pip:
+#     name: pip
+#     executable: pip3
+#     extra_args: --upgrade
+#   pip:
+#     name: setuptools
+#     executable: pip3
+#     extra_args: --upgrade
+
+---
+- name: pip3,setuptools upgrade
+  pip:
+    name: "{{ item }}"
+    executable: pip3
+    extra_args: --upgrade
+  with_items: 
+    - pip
+    - setuptools

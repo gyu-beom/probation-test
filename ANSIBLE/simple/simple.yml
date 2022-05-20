@@ -1,0 +1,6 @@
+---
+- name: Simple playbook
+  hosts: all
+  tasks:
+    - name: Leaving a mark
+      command: "touch /root/ansible_was_here"

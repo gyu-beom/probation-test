@@ -1,0 +1,7 @@
+---
+- name: pip playbook
+  hosts: all
+  roles:
+    - install-pip
+
+# [root@role]# ansible-playblook install-pip.yml

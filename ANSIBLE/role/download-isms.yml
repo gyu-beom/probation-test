@@ -1,0 +1,7 @@
+---
+- name: download isms playbook
+  hosts: instance-1
+  roles:
+    - download-isms
+
+# [root@role]# ansible-playblook download-isms.yml

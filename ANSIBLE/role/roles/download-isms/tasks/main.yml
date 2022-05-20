@@ -1,0 +1,6 @@
+---
+- name: download ISMS-SH.tar.gz
+  get_url:
+    url: https://github.com/G00se-Bumps/PROBATION/raw/main/ISMS/ISMS-SH.tar.gz
+    dest: /root/ISMS-SH.tar.gz
+    mode: 0660

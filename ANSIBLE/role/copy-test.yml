@@ -1,0 +1,7 @@
+---
+- name: copy playbook
+  hosts: all
+  roles:
+    - copy-test
+
+# [root@role]# ansible-playblook copy-test.yml
