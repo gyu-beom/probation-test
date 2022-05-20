@@ -3,7 +3,7 @@
 <img alt="Linux" src ="https://img.shields.io/badge/Linux-FCC624.svg?&style=for-the-badge&logo=Linux&logoColor=white"/> <img alt="GNU BASH" src ="https://img.shields.io/badge/GNU BASH-4EAA25.svg?&style=for-the-badge&logo=GNU BASH&logoColor=white"/>
 ___
 
-
+ISMS 연습 디렉터리입니다.
 
 <details>
 <summary>구현하지 못한 진단항목</summary>
